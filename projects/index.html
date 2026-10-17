@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects - Zak</title>
-  <meta name="description" content="All projects by Zak." />
+  <title>Projects - teddeh</title>
+  <meta name="description" content="All projects by teddeh." />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Projects - Zak" />
+  <meta property="og:title" content="Projects - teddeh" />
   <meta property="og:url" content="https://teddehperson.github.io/projects/" />
   <meta property="og:type" content="website" />
 
@@ -171,7 +171,7 @@
 <body>
 
   <nav>
-    <a href="../" class="nav-logo">yourname.dev</a>
+    <a href="../" class="nav-logo">teddeh.dev</a>
     <div class="nav-links">
       <a href="../">Home</a>
       <a href="/projects/" class="active">Projects</a>
@@ -184,10 +184,6 @@
     <h1 class="page-title">All Projects</h1>
     <p class="page-sub">A collection of things I have built. Use the filters below to browse by category.</p>
 
-    <!-- ============================================================
-         CONTROLS
-         Add a filter-btn for each category you use in data-category.
-         ============================================================ -->
     <div class="controls">
       <input class="search-input" type="search" id="search" placeholder="Search projects..." />
       <button class="filter-btn active" data-filter="all">All</button>
@@ -196,15 +192,8 @@
       <button class="filter-btn" data-filter="other">Other</button>
     </div>
 
-    <!-- ============================================================
-         PROJECTS
-         Each card needs:
-           data-name  - used for search (lowercase is fine)
-           data-category - must match a filter-btn's data-filter value
-         ============================================================ -->
     <div class="projects-grid" id="grid">
 
-      <!-- PROJECT 1 -->
       <div class="project-card" data-name="project one ml model" data-category="ml">
         <span class="project-tag">ML / AI</span>
         <h3>Project Name 1</h3>
@@ -217,7 +206,6 @@
         </a>
       </div>
 
-      <!-- PROJECT 2 -->
       <div class="project-card" data-name="project two web app" data-category="web">
         <span class="project-tag">Web</span>
         <h3>Project Name 2</h3>
@@ -229,7 +217,6 @@
         </a>
       </div>
 
-      <!-- PROJECT 3 -->
       <div class="project-card" data-name="project three tool" data-category="other">
         <span class="project-tag">Other</span>
         <h3>Project Name 3</h3>
@@ -240,9 +227,6 @@
           View on GitHub →
         </a>
       </div>
-
-      <!-- Add more cards by copying any project-card block above.
-           Make sure to update data-name and data-category. -->
 
       <p class="no-results" id="noResults">// no projects match your search</p>
     </div>
@@ -255,7 +239,6 @@
   <button id="back-to-top" title="Back to top" aria-label="Back to top">↑</button>
 
   <script>
-    // ---- Search + filter ----
     const searchInput = document.getElementById('search');
     const filterBtns  = document.querySelectorAll('.filter-btn');
     const cards       = document.querySelectorAll('.project-card');
@@ -288,7 +271,6 @@
       });
     });
 
-    // ---- Back to top ----
     const btt = document.getElementById('back-to-top');
     window.addEventListener('scroll', () => {
       btt.classList.toggle('visible', window.scrollY > 300);
